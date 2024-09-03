@@ -1,0 +1,145 @@
+body {
+    background-image: url('BgRose.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2);
+    backdrop-filter: blur(10px);
+    padding: 20px;
+    text-align: center;
+    height: 300px;
+    width: 300px;
+}
+
+.question {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.btn-group {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.yes-btn {
+    background-color: #2ecc71;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 5px;
+    color: #fff;
+}
+
+.yes-btn:hover {
+    background-color: #1abc9c;
+}
+
+.no-btn {
+    background-color: #e74c3c;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 5px;
+    color: #fff;
+}
+
+.no-btn:hover {
+    background-color: #c0392b;
+}
+
+.heart-icon {
+    font-size: 48px;
+    color: #e74c3c;
+    animation: spin 2s linear infinite;
+    display: inline-block;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.glowing-text {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff;
+    animation: glow 2s linear infinite;
+}
+
+@keyframes glow {
+    0% {
+        opacity: 0.5;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Heart Icon Style with Z-Axis Rotation */
+.heart-icon {
+    font-size: 48px;
+    color: #e74c3c;
+    animation: rotateZ 2s linear infinite; /* Apply Z-axis rotation animation */
+    display: inline-block;
+}
+
+/* Keyframes for Z-Axis Rotation */
+@keyframes rotateZ {
+    0% {
+        transform: rotateZ(0deg);
+    }
+
+    25% {
+        transform: rotateZ(90deg);
+    }
+
+    50% {
+        transform: rotateZ('180deg');
+    }
+
+    75% {
+        transform: rotateZ(270deg);
+    }
+
+    100% {
+        transform: rotateZ(360deg);
+    }
+}
+
+
+/* Glowing Text Style */
+.glowing-text {
+    text-shadow: 0 0 10px #ff69b4, 0 0 20px #ff69b4, 0 0 30px #ff69b4, 0 0 40px #ff69b4, 0 0 50px #ff69b4;
+    animation: glow 1.5s ease-in-out infinite; /* Adjust the glow speed */
+}
+
+@keyframes glow {
+    0% {
+        opacity: 0.5;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0.5;
+    }
+}
